@@ -63,6 +63,17 @@ function mostrarIngredientes(drink) {
         </div>
       </div>
     `;
+        contenedor.innerHTML = `
+      <div class="card m-3" style="width: 18rem;">
+        <img src="${drink.strDrinkThumb}" class="card-img-top" alt="${drink.strDrink}">
+        <div class="card-body">
+          <h5 class="card-title">${drink.strDrink}</h5>
+          <p class="card-text"><strong>Ingredientes:</strong></p>
+          <ul>${ingredientes}</ul>
+          <button class="btn btn-secondary" id="btnVolver">Volver</button>
+        </div>
+      </div>
+    `;
 
     document.getElementById("btnVolver").addEventListener("click", () => {
       document.getElementById("formBusqueda").dispatchEvent(new Event("submit"));
