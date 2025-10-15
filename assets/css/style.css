@@ -1,0 +1,48 @@
+body {
+  background: linear-gradient(to right, #ffecd2, #fcb69f);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.card {
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 15px 25px rgba(0,0,0,0.3);
+}
+
+.card img {
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-body h5 {
+  font-weight: bold;
+}
+
+.card-body button {
+  width: 100%;
+  transition: background 0.3s;
+}
+
+.card-body button:hover {
+  background: #198754cc;
+  color: #fff;
+}
+
+ul {
+  padding-left: 20px;
+  list-style-type: square;
+}
